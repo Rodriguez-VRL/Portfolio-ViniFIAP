@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU SITE</title> <!--vai ficar la na guia -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href=".assets/css/reset.css">
+    <link rel="stylesheet" href=".assets/css/meusite.css">
+    
+    <link rel="stylesheet" href=".assets/css/banner.css">
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <style>
+        @media screen and (max-width: 800px) {
+            .primeira_nave{
+                position: absolute;
+                animation: none;
+                flex-direction: column !important;
+                top: 0;
+                background-color: black;
+                height: 100vw;
+                width: 20vw;
+                padding: 1em;
+                animation-duration: 1s;
+                margin-left: -100vw;
+            }
+            
+
+            a{
+                filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.50));
+            }
+    
+            
+
+            #button_help{
+                color: red;
+            }
+
+            #button_login{
+                color: red;
+            }
+            
+
+            .btn_icon_header{
+                display: block;
+                color: bisque;
+            }
+        }
+
+        @keyframes showSidebar {
+            from {margin-left: -100vw;}
+            to {margin-left: -5vw;}
+        }
+    </style>
+
+
+</head>
+<body onLoad="loading()">
+    <div class="box-load">
+        <div class="pre"></div>
+    </div>
+    <div class="conteudoload"> 
+
+
+        <header id="header">
+
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            
+            <div class="logo_header">
+                <h1>VEX</h1>
+                <h2>FLIX</h2>
+            </div>
+            
+
+
+            <nav class="primeira_nave " id="primeira_nave"<!--navigation-->
+
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                <a id="button_home" href="https://www.youtube.com/"lang="en">HOME</a> 
+                <a id="button_filmes" href="https://www.youtube.com/">FILMES</a> 
+                <a id="button_series" href="https://www.youtube.com/">SÉRIES</a> 
+                <a id="button_noticias" href="https://www.youtube.com/">NOTÍCIAS</a> 
+                <a id="button_help" href="https://www.youtube.com/"lang="en">HELP</a> 
+                <a id="button_login"href="https://www.youtube.com/"lang="en">LOGIN</a>
+                <a id="button_register" href="https://www.youtube.com/">REGISTRAR-SE</a> 
+
+            </nav>
+
+
+
+
+        </header>
+
+
+
+        <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+            <section class= "banner">
+
+
+                <div class="gallery-container">
+        
+                    
+                    <a href="images/ação.png" class="gallery-items">
+                        <img src="images/ação.png" alt="Ação">
+                        <h3>AÇÃO</h3>
+        
+                    </a>
+                    <a href="images/aventura.png" class="gallery-items">
+                        <img src="images/aventura.png" alt="Aventura">
+                        <h3>AVENTURA</h3>
+                    </a>
+                    <a href="images/animação.png" class="gallery-items">
+                        <img src="images/animação.png" alt="Animação">
+                        <h3>ANIMAÇÃO</h3>
+                    </a>
+                    <a href="images/comedia.png" class="gallery-items">
+                        <img src="images/comedia.png" alt="Comédia">
+                        <h3>COMÉDIA</h3>
+                    </a>
+                    <a href="images/terror.png" class="gallery-items">
+                        <img src="images/terror.png" alt="Terror">
+                        <h3>TERROR</h3>
+                    </a>
+                    <a href="images/drama.png" class="gallery-items">
+                        <img src="images/drama.png" alt="Drama">
+                        <h3>DRAMA</h3>
+                    </a>
+                    <a href="images/familia.png" class="gallery-items">
+                        <img src="images/familia.png" alt="Familia">
+                        <h3>FAMILIA</h3>
+                    </a>
+                    <a href="images/thriller.pn" class="gallery-items">
+                        <img src="images/thriller.png" alt="Thriller">
+                        <h3>THRILLER</h3>
+                    </a>
+                    <a href="images/musical.png" class="gallery-items">
+                        <img src="images/musical.png" alt="Musical">
+                        <h3>MUSICAL</h3>
+                    </a>
+                    <a href="images/suspense.png" class="gallery-items">
+                        <img src="images/suspense.png" alt="Suspense">
+                        <h3>SUSPENSE</h3>
+                    </a>
+                    <a href="images/historia.png" class="gallery-items">
+                        <img src="images/historia.png" alt="Historia">
+                        <h3>HISTORIA</h3>
+                    </a>
+                    <a href="images/faroeste.png" class="gallery-items">
+                        <img src="images/faroeste.png" alt="Faroeste">
+                        <h3>FAROESTE</h3>
+                    </a>
+                    <a href="images/FICÇÃO.png" class="gallery-items">
+                        <img src="images/FICÇÃO.png" alt="Ficção cientif">
+                        <h3>FICÇÃO CIENTIF</h3>
+                    </a>
+                    <a href="images/crime.png" class="gallery-items">
+                        <img src="images/crime.png" alt="Crime">
+                        <h3>CRIME</h3>
+                    </a>
+                    <a href="images/fantasia.png" class="gallery-items">
+                        <img src="images/fantasia.png" alt="Fantasia">
+                        <h3>FANTASIA</h3>
+                    </a>
+                    <a href="images/policial.png" class="gallery-items">
+                        <img src="images/policial.png" alt="Policial">
+                        <h3>POLICIAL</h3>
+                    </a>
+                </div>        
+        
+        
+            
+            </section>
+        
+
+
+
+
+
+
+
+        </div>
+
+
+
+    
+    
+    </div>
+
+</body>
+<script>
+    var header           = document.getElementById('header');
+    var primeiranave = document.getElementById('primeira_nave');
+    var content          = document.getElementById('content');
+    var showSidebar      = false;
+
+
+
+    function loading(){
+        document.getElementsByClassName('box-load')[0].style.display="none";
+        document.getElementsByClassName('conteudoload')[0].style.display="block"
+    }
+
+    function toggleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            primeiranave.style.marginLeft = '-5vw';
+            primeiranave.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            primeiranave.style.marginLeft = '-100vw';
+            primeiranave.style.animationName = '';
+            content.style.filter = '';
+        }
+    }
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 800 && showSidebar) 
+        {  
+            showSidebar = true;
+            toggleSidebar();
+        }
+    });
+</script>
+
+
+
+
+</html>
+
+
+
+
+<!-- Utilize isso para realizar marcações no seu texto e saber o que está fazendo ok-->
+
+<!-- instalar o live server para quando salvar dar f5 na pagina sozinho ok -->
+
+<!-- Header serve para criar um cabeçario, assim fica mais fácil para mover os itens ok -->
+
+<!-- A (precisa ser minusculo) é para inserir o link e atribuir em algum local-->
+
+<!-- IMG serve para colocar imagem, SRC = Fonte, ALT = Texo alternativo-->
+
+<!-- P serve para colocar paragrafo-->
+
+<!-- HTML vai colocar o conteudo, CSS será a aparencia, o HERO da nossa pagina
+não faz parte da aparencia, quando a imagem está relacionada com o conteudo, ajuda a
+compreender o conteudo, é HTML. Quando é estetica, usaremos CSS-->
+
+<!-- CSS inline, coloca diretamente a linha usando o atribulo style. Pessima estrategia
+para reaproveitamento-->
+
+<!-- CSS interno é que está dentro da pagina, no começo inserimos uma tag style
+com as informações da FONTE e TITULOS, assim você consegue mudar todos ao mesmo tempo
+-->
+
+<!-- CSS Externo - Vamos centralizar todas as informações em arquivos CSS, se mudar
+uma formatação dentro dela, todas que utilizam será alteradas-->
+
+<!-- Material Icon Theme < Baixar para ficar mais bonitinho nas pastas-->
+
+<!-- Font-weight - COR DA FONTE ou PESO DA FONTE-->

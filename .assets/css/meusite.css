@@ -1,0 +1,285 @@
+
+
+
+header{
+    background:linear-gradient(89.99deg, #203A43 42%, rgba(223, 18, 18, 0.89) 97%);
+    height: 130px;
+    line-height: 50px; 
+    border-bottom: 10px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
+.content{
+    text-align: center;
+    align-items: center ;
+    transition: 1s;
+
+
+
+
+
+}
+a{
+    color: white;
+    font-size: 13px;
+    font-family: 'Potta One', cursive;
+    font-weight: 400px;
+    text-decoration: none ;
+    margin-top: 10px;   
+
+}
+.primeira_nave{
+    text-align: right;
+    animation: bounceInRight ;
+    animation-duration: 1000ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    z-index: 2; 
+
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+
+#button_home{
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.50));
+
+
+
+}
+#button_home:hover{
+    color: yellow;
+}
+
+
+#button_filmes{
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.50));
+
+
+}
+#button_filmes:hover{
+    color: yellow;
+}
+
+#button_series{
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.50));
+
+
+}
+#button_series:hover{
+    color: yellow;
+}
+
+#button_noticias{
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.50));
+
+
+}
+
+#button_noticias:hover{
+    color: yellow;
+}
+
+#button_help{
+    color: black;
+    font-size: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+}
+#button_help:hover{
+    color: yellow;
+}
+
+#button_login{
+    color: black;
+    font-size: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+}
+#button_login:hover{
+    color: yellow;
+}
+
+#button_register{
+    font-family: 'Oxanium', cursive;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 2px;
+    text-shadow: 0px 1px 1px #000000;
+    color: black;
+    display: inline-block;
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 5px 4px #000000;
+    border-radius: 100px;
+    transition: 100ms linear;
+    }
+#button_register:hover{
+    transform: scale(1.08);
+} 
+
+
+
+
+
+
+
+h1 {
+
+    position: absolute;
+    width: 186.52px;
+    height: 32px;
+    left: 59.21px;
+    top: 35px;
+
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    /* or 56% */
+
+    letter-spacing: 0.3em;
+
+    color: #FF0000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1.00);
+    filter: drop-shadow(0px 5px 5px rgba(255, 255, 255, 0.50));
+    animation: fadeInTopLeft;
+    animation-duration: 1000ms; 
+        }
+
+
+h2 {
+    position: absolute;
+    width: 215.14px;
+    height: 44px;
+    left: 133.23px;
+    top: 70px;
+
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    /* or 56% */
+
+    letter-spacing: 0.3em;
+
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1.00);
+    filter: drop-shadow(0px 5px 5px rgba(255, 255, 255, 0.50));
+    animation: fadeInBottomRight;
+    animation-duration: 1000ms; 
+
+}
+
+
+
+
+.gallery-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3vw;
+    padding: 0 2vw;
+    padding-top: 100px;
+
+
+    
+}
+
+.gallery-items{
+    color: #000000;
+    width: 235px;
+    height: 125px;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transformar .5s linear;
+    text-align: center;
+    
+}
+
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(30%);
+
+}
+
+.gallery-items img:hover{
+    filter: brightness(100%);
+    
+}
+
+.gallery-items:hover{
+    transform: scale(1.2);
+    
+}
+
+.gallery-items h3{
+    font-family: 'Prosto One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.3em;
+    color: #FFE600;
+}
+
+@keyframes load{
+    to{transform: rotate(360deg)}
+}
+.pre{
+    width: 80px;
+    height: 80px;
+    background-image: url("https://ilustracode.com.br/assets/images/load.png");
+    background-position: center;
+    background-size: contain;
+    animation: load 2s infinite linear;
+
+
+
+
+}
+
+.box-load{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudoload{
+    display: none;
+}
